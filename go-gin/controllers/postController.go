@@ -21,6 +21,7 @@ func PostGet(c *gin.Context) {
 		"posts": posts,
 	})
 }
+
 func PostGetById(c *gin.Context) {
 	// Get Id from URL
 	id := c.Param("id")
@@ -88,7 +89,7 @@ func PostUpdate(c *gin.Context) {
 	})
 }
 
-func PostDelete(c *gin.Context)  {
+func PostDelete(c *gin.Context) {
 	// Get the id from URL
 	id := c.Param("id")
 
